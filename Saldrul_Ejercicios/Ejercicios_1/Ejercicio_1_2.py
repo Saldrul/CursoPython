@@ -4,4 +4,4 @@
 import sys
 print(sys.argv)
 
-hola como estas 
+hola como estas
