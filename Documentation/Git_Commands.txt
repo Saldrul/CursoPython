@@ -4,6 +4,8 @@ git clone + "url del repo" (la url del repo es el link de la pagina GitHub del r
 git status: Te dice en que rama estás parado y que archivos agregaste, modificaste o eliminaste, en comparación
 con el anterior commit. (es como un print que te muestra el estado de la carpeta que es estás mirando)
 
+git pull: Updatea repositorio local con los cambios en el repositorio online.
+
 PRIMER PASO:
 git add "nombre del archivo" (si lo hiciste bien aparece en verde en git status) (este es el primer paso para agregar
 algo a la pagina online de git hub) También podés usar git add. (y agrega todas las modificaciones)

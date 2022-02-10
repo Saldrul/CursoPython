@@ -1,0 +1,11 @@
+Pycharm useful hotkeys:
+    - Format file: ctrl + alt + l
+    - Optimize Imports: ctrl + alt + o
+    - Find in file: ctrl + shift + f
+    - Find a file: double tap shift
+
+When in doubt:
+    - Split problem into smaller parts
+    - Assign useful data to variables
+    - Think whether a loop is needed, and decide between a while, for in range,
+    and a for in collection loop
