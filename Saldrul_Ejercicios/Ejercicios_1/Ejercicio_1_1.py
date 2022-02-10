@@ -1,5 +1,5 @@
 # Cree un programa que tome tres valores por consola
-# multiplique el primero por el segundoy le sume el tercero.
+# multiplique el primero por el segundo y le sume el tercero.
 # Presente el resultado en la terminal
 
 print("A continuación coloque 3 numeros, el 1ero será multiplicado por el 2do y luego el 3ero"

@@ -2,5 +2,6 @@
 # pasar tres parámetros. El programa debe tomar los parámetros e indicar en la terminal si
 # son múltiplos de dos.
 import sys
+print(sys.argv)
 
 
