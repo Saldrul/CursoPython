@@ -10,7 +10,7 @@ algo a la pagina online de git hub) También podes usar git add. (y agrega todas
 git commit -m "Tú mensaje(el que vos quieras)" Es que acentas los cambios, ya estás commiteado. Los cambios
 pasan a ser reales para siempre, si querés que vuelva a lo anterior tenés que volver a modificarlo.
 
-git push origin "Branch" (lo que hace es pushear (a la pagina online) todos los commits que tenés hechos vos en tu repo
+git push origin branch (lo que hace es pushear (a la pagina online) todos los commits que tenés hechos vos en tu repo
 que no están agregados al repo online)
 Origin: se refiere al lugar donde clonaste el commit
 Branch = main (si solo está esa rama): es a la rama que querés meter los cambios,
