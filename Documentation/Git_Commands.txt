@@ -4,18 +4,21 @@ git clone + "url del repo" (la url del repo es el link de la pagina GitHub del r
 git status: Te dice en que rama estás parado y que archivos agregaste, modificaste o eliminaste, en comparación
 con el anterior commit. (es como un print que te muestra el estado de la carpeta que es estás mirando)
 
+PRIMER PASO:
 git add "nombre del archivo" (si lo hiciste bien aparece en verde en git status) (este es el primer paso para agregar
 algo a la pagina online de git hub) También podés usar git add. (y agrega todas las modificaciones)
 
+SEGUNDO PASO:
 git commit -m "Tú mensaje(el que vos quieras)" Es que asentas los cambios, ya estás commiteado. Los cambios
 pasan a ser reales para siempre, si querés que vuelva a lo anterior tenés que volver a modificarlo.
 
+TERCER PASO:
 git push origin branch (lo que hace es pushear (a la pagina online) todos los commits que tenés hechos vos en tu repo
 que no están agregados al repo online)
 Origin: se refiere al lugar donde clonaste el commit
 Branch = main (si solo está esa rama): es a la rama que querés meter los cambios,
 por ahora va a ser siempre Main (la única rama creada por ahora).
-Aguante el morcipán
+
 
 
 
