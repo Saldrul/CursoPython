@@ -6,22 +6,9 @@ import sys
 
 print(sys.argv[0])
 print(sys.argv[1])
-print(sys.argv[2])
-print(sys.argv[3])
 
-if int(sys.argv[1]) % 2 == 0:
-    print(sys.argv[1],"es multiplo de 2")
-else:
-    print(sys.argv[1],"no es multiplo de 2")
-if int(sys.argv[2]) % 2 == 0:
-    print(sys.argv[2], "es multiplo de 2")
-else:
-    print(sys.argv[2],"no es multiplo de 2")
-if int(sys.argv[3]) % 2 == 0:
-    print(sys.argv[2], "es multiplo de 2")
-else:
-    print(sys.argv[3],"no es multiplo de 2")
-
-
-
-
+for i in range(1, len(sys.argv)):
+    if int(sys.argv[i]) % 2 == 0:
+        print((sys.argv[i]), "Es multiplo de 2")
+    else:
+        print((sys.argv[i]), "No es multiplo de 2")
