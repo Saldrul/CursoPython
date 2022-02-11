@@ -3,7 +3,7 @@
 # Cree un programa que tome tres valores por consola multiplique el primero por el segundo
 # y le sume el tercero. Presente el resultado en la terminal
 # import sys
-import math
+# import math
 
 
 #
