@@ -4,7 +4,13 @@
 # 𝐴 = 𝜋. r^2
 # A = Área
 
-radio = int(input("Pone el radio de una circunferencia: "))
-n_pi = 3.1416       # utilizar math.pi
-area = n_pi * radio ** 2
-print(area)
+import math
+
+
+def calculararea():
+    radio = int(input("Pone el radio de una circunferencia: "))
+    area = math.pi * radio ** 2
+    print(area)
+
+
+calculararea()

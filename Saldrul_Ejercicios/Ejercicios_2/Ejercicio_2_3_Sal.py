@@ -1,3 +1,7 @@
+# Tome dos valores por consola, y guarde en una lista:
+# [primer_valor, segundo_valor, la_suma_de_los_valores]
+# Presente el resultado en la terminal del editor
+
 valores = []
 
 valor_1 = int(input("Pone un número:"))
@@ -8,18 +12,4 @@ valores.append(valor_1 + valor_2)
 
 print(valores)
 
-
-
-
-
-
-
-"""
-def pedirvalores(valor_1, valor_2):
-    return valor_1, valor_2, valor_1 + valor_2
-
-
-valor = pedirvalores(1, 4)
-print(valor)
-"""
 
