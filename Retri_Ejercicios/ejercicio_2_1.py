@@ -1,6 +1,6 @@
 import sys
 try:
-    for i in range(1, len(sys.argv)):
+    for i in range(1, 4):
         if int(sys.argv[i]) % 2 == 0:
             continue
         else:
