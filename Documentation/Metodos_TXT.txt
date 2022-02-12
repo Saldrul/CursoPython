@@ -1,0 +1,6 @@
+Cuando tengamos un string ponemos .strip
+
+
+("arbol","r") (#r = utilizado para leer el cosito)
+("arbol", "w") (#w =  sobreescribe lo que había antes)
+("arbol", "a") (#a = agrega como un .append abajo de lo último agregado)
