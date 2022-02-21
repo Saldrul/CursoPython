@@ -4,5 +4,4 @@
 
 oracion = input("Pone una oración: ")
 contador_de_a = oracion.count("a")
-print("tu oración tiene:",contador_de_a, "---->a")
-
+print("tu oración tiene:", contador_de_a, "---->a")

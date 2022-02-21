@@ -6,5 +6,3 @@ from collections import Counter
 pone_oracion = input("Pone una oración: ")
 contador = Counter(pone_oracion)
 print(contador)
-
-
