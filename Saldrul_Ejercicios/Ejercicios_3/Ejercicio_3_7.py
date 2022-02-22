@@ -3,15 +3,14 @@
 
 class Verdu:
     def __init__(self):
-        self.compras_cliente = []
+        self.compras_cliente = {}
 
     def comprarCosas(self):
         que = input("¿Qué vas a comprar? ")
         cuanto = int(input(f"¿Cuánto/a {que} vas a comprar? "))
         precio = int(input(f"¿Cuánto vale? {que} "))
         monto_total = precio * cuanto
-        self.compras_cliente.append(que)
-        self.compras_cliente.append(monto_total)
+        self.compras_cliente[que] = monto_total
         print(f"{cuanto} {que} te cuesta: {monto_total}")
 
     def mostrarCosas(self):
