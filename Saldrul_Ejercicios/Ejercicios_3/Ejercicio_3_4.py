@@ -1,5 +1,5 @@
-# Tome el ejercicio de cálculo de números pares e impares de la unidad 2
-# y agréguele un bucle al código de forma de simplificarlo.
+# Escriba un programa que solicite la edad de la persona e
+# imprima todos los años que la persona ha cumplido.
 
 edad_persona = int(input("Pone tu edad: "))
 todas_edades = []
