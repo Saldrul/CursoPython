@@ -4,6 +4,7 @@
 class Verdu:
     def __init__(self):
         self.compras_cliente = {}
+        self.total_compras = 0
 
     def comprarCosas(self):
         que = input("¿Qué vas a comprar? ")
@@ -12,9 +13,11 @@ class Verdu:
         monto_total = precio * cuanto
         self.compras_cliente[que] = monto_total
         print(f"{cuanto} {que} te cuesta: {monto_total}")
+        self.total_compras = sum(self.compras_cliente.values())
 
     def mostrarCosas(self):
         print(self.compras_cliente)
+        print("Todas tus compras cuestan: ", self.total_compras)
 
 
 comprador = Verdu()

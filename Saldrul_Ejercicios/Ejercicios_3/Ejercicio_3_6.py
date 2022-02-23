@@ -11,12 +11,16 @@ class Verdu:
         cuanto = int(input(f"¿Cuánto/a {que} vas a comprar? "))
         precio = int(input(f"¿Cuánto vale? {que} "))
         monto_total = precio * cuanto
-        self.compras_cliente.append(que)
-        self.compras_cliente.append(monto_total)
+        amontonamiento = [que, monto_total]
+        self.compras_cliente.append(amontonamiento)
         print(f"{cuanto} {que} te cuesta: {monto_total}")
 
     def mostrarCosas(self):
         print(self.compras_cliente)
+        suma_total = 0
+        for i in range(0, len(self.compras_cliente)-1):
+            self.compras_cliente[i][1] += self.compras_cliente[i+1][1]
+        print("esta es la suma total: ",self.compras_cliente[0][1])
 
 
 comprador = Verdu()
