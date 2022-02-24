@@ -21,6 +21,7 @@ def calculadora_verduleria(total_debido: int = 0, productos_comprados=None, ) ->
         calculadora_verduleria(total_debido, productos_comprados)
 
 
+
 print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 print("Bienvenido a la verdulería virtual 'Ricky'!")
 print("Ingrese el nombre de su producto, así como también la cantidad y el precio por kg.")
