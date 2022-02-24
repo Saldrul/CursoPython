@@ -9,7 +9,7 @@ def calculadora_verduleria(total_debido: int = 0, productos_comprados=None, ) ->
     pregunta_compra = input("Desea continuar su compra? Ingrese sí o no : ")
     pregunta_compra = pregunta_compra.lower()
     if not (pregunta_compra == "sí" or pregunta_compra == "si"):
-        print(f"Su total debido es {total_debido} y compró {productos_comprados}")
+        print(f"Su total debido es ${total_debido} y compró {productos_comprados}")
         print(f"¡Vuelva prontos!")
         exit()
     else:
