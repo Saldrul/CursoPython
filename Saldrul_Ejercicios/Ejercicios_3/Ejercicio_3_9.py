@@ -1,6 +1,6 @@
 class Verdu:
     def __init__(self):
-        self.compras_cliente = []
+        self.compras_cliente = {}
         self.loop = True
 
     def comprarCosas(self):
@@ -22,23 +22,17 @@ class Verdu:
         print("Llevate esta... sheesh!!!")
 
     def comprar(self):
-        cual = "Compra numero:"
-        self.lista_compras = []
-        iden = 0
-        iden += 1
+
+        self.dicc_compras = {}
         que = input("¿Qué producto vas a comprar? ").capitalize()
         cuanto = int(input("¿Cuánto vas a comprar? "))
         precio = int(input("Precio del producto: "))
         total = f"total:, ${cuanto * precio}"
-        self.lista_compras.append(cual)
-        self.lista_compras.append(iden)
-        self.lista_compras.append(que)
-        self.lista_compras.append(cuanto)
-        self.lista_compras.append(precio)
-        self.lista_compras.append(total)
-
-        self.compras_cliente.append(self.lista_compras)
-        print("Compraste ", self.lista_compras)
+        self.dicc_compras[que] = que
+        self.dicc_compras[cuanto] = cuanto
+        self.dicc_compras[precio] = precio
+        self.dicc_compras[total] = total
+        print("Compraste ", self.dicc_compras)
 
     def remover(self):
         sacar = int(input("Para remover una compra pone la posición en la que se encuentra tu producto, "
@@ -70,17 +64,17 @@ class Verdu:
         whating = int(input("¿Qué cosa querés cambiar? nombre = 1, cantidad = 2, precio = 3 "))
         if whating == 1:
             nombre = input("Pone el nuevo nombre ")
-            self.compras_cliente[cambiar - 1][2] = nombre
+            self.compras_cliente[cambiar-1][2] = nombre
         elif whating == 2:
             cantidad = int(input("Pone la nueva cantidad "))
-            self.compras_cliente[cambiar - 1][3] = cantidad
-            actualizar = f"total:, {self.compras_cliente[cambiar - 1][3] * self.compras_cliente[cambiar - 1][4]}"
-            self.compras_cliente[cambiar - 1][5] = actualizar
+            self.compras_cliente[cambiar-1][3] = cantidad
+            actualizar = f"total:, {self.compras_cliente[cambiar-1][3] * self.compras_cliente[cambiar-1][4]}"
+            self.compras_cliente[cambiar-1][5] = actualizar
         elif whating == 3:
             precio = int(input("Pone el nuevo precio "))
-            self.compras_cliente[cambiar - 1][4] = precio
-            actualizar = f"total:, ${self.compras_cliente[cambiar - 1][3] * self.compras_cliente[cambiar - 1][4]}"
-            self.compras_cliente[cambiar - 1][5] = actualizar
+            self.compras_cliente[cambiar-1][4] = precio
+            actualizar = f"total:, ${self.compras_cliente[cambiar-1][3] * self.compras_cliente[cambiar-1][4]}"
+            self.compras_cliente[cambiar-1][5] = actualizar
         print("Organizaste")
 
 
