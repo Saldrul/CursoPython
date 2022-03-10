@@ -23,7 +23,7 @@ class Verdu:
 
     def comprar(self):
         cual = "Compra numero:"
-        iden = 0
+        iden = 1
         self.lista_compras = []
         que = input("¿Qué producto vas a comprar? ").capitalize()
         cuanto = int(input("¿Cuánto vas a comprar? "))
@@ -60,25 +60,26 @@ class Verdu:
 
     def organizar(self):
         cambiar = int(input("Para cambiar una compra pone la posición en la que se encuentra tu producto, "
-                            "posición primera = 0: "))
+                            "posición primera = 1: "))
         if cambiar > len(self.compras_cliente):
             print("---" * 34)
             print("Tu posición no es una compra realizada ")
             print("---" * 34)
+            self.organizar()
         whating = int(input("¿Qué cosa querés cambiar? nombre = 1, cantidad = 2, precio = 3 "))
         if whating == 1:
             nombre = input("Pone el nuevo nombre ")
-            self.compras_cliente[cambiar][2] = nombre
+            self.compras_cliente[cambiar-1][2] = nombre
         elif whating == 2:
             cantidad = int(input("Pone la nueva cantidad "))
-            self.compras_cliente[cambiar][3] = cantidad
-            actualizar = f"total:, {self.compras_cliente[cambiar][3] * self.compras_cliente[cambiar][4]}"
-            self.compras_cliente[cambiar][5] = actualizar
+            self.compras_cliente[cambiar-1][3] = cantidad
+            actualizar = f"total:, {self.compras_cliente[cambiar-1][3] * self.compras_cliente[cambiar-1][4]}"
+            self.compras_cliente[cambiar-1][5] = actualizar
         elif whating == 3:
             precio = int(input("Pone el nuevo precio "))
-            self.compras_cliente[cambiar][4] = precio
-            actualizar = f"total:, ${self.compras_cliente[cambiar][3] * self.compras_cliente[cambiar][4]}"
-            self.compras_cliente[cambiar][5] = actualizar
+            self.compras_cliente[cambiar-1][4] = precio
+            actualizar = f"total:, ${self.compras_cliente[cambiar-1][3] * self.compras_cliente[cambiar-1][4]}"
+            self.compras_cliente[cambiar-1][5] = actualizar
         print("Organizaste")
 
 
