@@ -1,6 +1,7 @@
 class Verdu:
     def __init__(self):
         self.compras_cliente = []
+        self.total_compras = 0
         self.loop = True
 
     def comprarCosas(self):
@@ -29,14 +30,15 @@ class Verdu:
         que = input("¿Qué producto vas a comprar? ").capitalize()
         cuanto = int(input("¿Cuánto vas a comprar? "))
         precio = int(input("Precio del producto: "))
-        total = f"total:, ${cuanto * precio}"
+        texto_total = f"total:, $"
+        total = (cuanto * precio)
         self.lista_compras.append(cual)
         self.lista_compras.append(iden)
         self.lista_compras.append(que)
         self.lista_compras.append(cuanto)
         self.lista_compras.append(precio)
+        self.lista_compras.append(texto_total)
         self.lista_compras.append(total)
-
         self.compras_cliente.append(self.lista_compras)
         print("Compraste ", self.lista_compras)
 
@@ -56,8 +58,12 @@ class Verdu:
         print(self.compras_cliente)
 
     def terminar(self):
+
         self.loop = False
-        print("Terminaste")
+        for i in range(0, len(self.compras_cliente)-1):
+            calculo_total = (self.compras_cliente[i][6]) + (self.compras_cliente[i+1][6])
+            self.total_compras = calculo_total
+        print("Terminaste con las compras, el total a pagar es:","$",self.total_compras)
 
     def organizar(self):
         cambiar = int(input("Para cambiar una compra pone la posición en la que se encuentra tu producto, "
@@ -75,12 +81,12 @@ class Verdu:
             cantidad = int(input("Pone la nueva cantidad "))
             self.compras_cliente[cambiar - 1][3] = cantidad
             actualizar = f"total:, {self.compras_cliente[cambiar - 1][3] * self.compras_cliente[cambiar - 1][4]}"
-            self.compras_cliente[cambiar - 1][5] = actualizar
+            self.compras_cliente[cambiar - 1][6] = actualizar
         elif whating == 3:
             precio = int(input("Pone el nuevo precio "))
             self.compras_cliente[cambiar - 1][4] = precio
             actualizar = f"total:, ${self.compras_cliente[cambiar - 1][3] * self.compras_cliente[cambiar - 1][4]}"
-            self.compras_cliente[cambiar - 1][5] = actualizar
+            self.compras_cliente[cambiar - 1][6] = actualizar
         print("Organizaste")
 
 
